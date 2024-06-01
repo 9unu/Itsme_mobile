@@ -19,7 +19,7 @@ import kotlinx.coroutines.withContext
 class RequestActivity : AppCompatActivity(), View.OnClickListener {
 
     private val TAG = javaClass.simpleName
-    private val BASE_URL = "http://10.0.2.2:8000"
+    private val BASE_URL = "http://54.79.101.135:8080"
     private lateinit var mMyAPI: RequestAPI
     private lateinit var mListTv: TextView
     private lateinit var mGetButton: Button
@@ -50,7 +50,7 @@ class RequestActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View) {
-        Log.d(TAG, "keyhash : 일단 클릭은됨")
+//        Log.d(TAG, "keyhash : 일단 클릭은됨")
         if (v == mGetButton) {
             Log.d(TAG, "GET")
             val headers = HashMap<String, String>()
